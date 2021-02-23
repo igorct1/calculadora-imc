@@ -10,11 +10,13 @@ const btnLimpar = document.getElementById("limpar");
 function calcularIMC(event) {
   // prevenindo comportamento padrão do botão submit
   event.preventDefault();
+
   // pegando valores de altura e peso e calculando imc
   const altura = document.getElementById("altura").value;
   const peso = document.getElementById("peso").value;
   const imc = peso / (altura * altura);
-  console.log(imc);
+
+  //estrutura condicional
   if (isNaN(imc)) {
     resultado.textContent = `Por favor preencha os campos corretamente.`;
   } else if (imc <= 18.5) {
