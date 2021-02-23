@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+.container {
+  background: #fca311;
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto;
+  padding: 40px 20px;
+  border-radius: 15px;
+  font-family: "Poppins";
+  max-width: 350px;
+}
+form {
+  margin: 20px;
+}
+
+form label {
+  font-size: 28px;
+}
+form input {
+  padding: 15px;
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 2px solid #14213d;
+  cursor: pointer;
+  font-size: 14px;
+  color: #14213d;
+  font-weight: 700;
+  width: 300px;
+}
+form ::placeholder {
+  font-size: 14px;
+  font-family: "Poppins";
+  font-weight: 700;
+}
+
+.form-title {
+  font-size: 38px;
+  font-family: "Poppins", sans-serif;
+  color: #14213d;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.form-btn {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.form-btn button {
+  margin-top: 10px;
+  padding: 15px 30px;
+  background: #ffffff;
+  border: 2px solid #14213d;
+  font-family: "Poppins";
+  font-size: 16px;
+  width: 160px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.resultado {
+  margin-top: 15px;
+  font-weight: 700;
+  color: #14213d;
+}
+@media (max-width: 435px) {
+  form input {
+    width: 230px;
+  }
+  .form-btn button {
+    padding: 15px 10px;
+    width: 125px;
+  }
+}
+
+@media (max-width: 365px) {
+  form input {
+    width: 180px;
+  }
+  .form-btn button {
+    padding: 15px 10px;
+    width: 100px;
+  }
+}
